@@ -2,6 +2,9 @@
 
 ⚠️ **Note:** This project is currently a work in progress!
 
+<img width="697" alt="Screenshot 2024-08-25 at 9 00 03 PM" src="https://github.com/user-attachments/assets/43688ae7-8483-4833-b2f4-dd93c63b916b">
+
+
 # TODO:
 - [ ] Shuffle the tiles at the start of the game
 - [ ] Add the right colors to the matched tiles
