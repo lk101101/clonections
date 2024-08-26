@@ -49,3 +49,12 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### 'npm run lint'
+
+Runs ESLint. 
+
+### 'npm run lint:fix'
+
+Fixes ESLint errors that can be fixed automatically.
+
