@@ -1,6 +1,6 @@
 import React from 'react';
 import Game from './components/Game';
-import mockTilesData from './components/data/mockTileData.js';
+import mockTilesData from './components/data/mockTileData';
 
 function App() {
   return (

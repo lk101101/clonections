@@ -1,5 +1,7 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import {
+  render, screen, test, expect,
+} from '@testing-library/react';
 import Tile from '../Tile';
 
 test('Tile renders correctly', () => {
