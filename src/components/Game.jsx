@@ -67,7 +67,7 @@ function Game({ tilesData }) {
 
   return (
     <div className="container">
-      <h1 className="game_title">Clonenections</h1>
+      <h1 className="game_title">Clonections</h1>
       <div className="grid">
         {tilesData.map((tile) => (
           <Tile
