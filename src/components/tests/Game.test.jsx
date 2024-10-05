@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  render, screen, test, expect,
-} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import mockTilesData from '../data/mockTileData';
 import Game from '../Game';
 
