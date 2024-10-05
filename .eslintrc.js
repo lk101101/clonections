@@ -1,12 +1,14 @@
 module.exports = {
-	root: true,
+  root: true,
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:jest/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -17,6 +19,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'jest',
   ],
   rules: {
   },
