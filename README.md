@@ -7,7 +7,7 @@
 
 # TODO:
 - [ ] Shuffle the tiles at the start of the game
-- [ ] Add the right colors to the matched tiles
+- [x] Add the right colors to the matched tiles
 - [ ] Implement a submit button to submit 4 selected tiles for validation
 - [ ] Implement a shuffle button to shuffle the remaining tiles
 - [ ] Implement deselect button to deselect the selected tiles
