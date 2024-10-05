@@ -51,14 +51,15 @@ function Game({ tilesData }) {
     }
   };
 
-  const getTileColor = (tile) => {
+  const getTileColors = (tile) => {
+    // return background and font color for tiles
     if (matchedTiles.includes(tile)) {
-      return tile.color;
+      return tile.colors;
     }
     if (selectedTiles.includes(tile)) {
-      return 'gray';
+      return ['#5a594e', '#fff'];
     }
-    return '#efefe6';
+    return ['#efefe6', '#000'];
   };
 
   useEffect(() => {
@@ -73,7 +74,7 @@ function Game({ tilesData }) {
           <Tile
             key={tile.word}
             word={tile.word}
-            color={getTileColor(tile)}
+            colors={getTileColors(tile)}
             onSelect={() => handleTileSelect(tile)}
             disabled={matchedTiles.includes(tile)}
           />
@@ -94,10 +95,9 @@ function Game({ tilesData }) {
 Game.propTypes = {
   tilesData: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
       word: PropTypes.string.isRequired,
       theme: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
+      colors: PropTypes.arrayOf(PropTypes.string).isRequired,
     }),
   ).isRequired,
 };

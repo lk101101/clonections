@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './styles/Tile.css';
 
 function Tile({
-  word, color, onSelect, disabled,
+  word, colors, onSelect, disabled,
 }) {
   const handleKeyDown = (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
@@ -18,7 +18,7 @@ function Tile({
       onClick={onSelect}
       onKeyDown={handleKeyDown}
       className={`tile ${disabled ? 'disabled' : ''}`}
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: colors[0], color: colors[1] }}
     >
       {word}
     </div>
@@ -27,9 +27,13 @@ function Tile({
 
 Tile.propTypes = {
   word: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-  onSelect: PropTypes.func.isRequired,
+  colors: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onSelect: PropTypes.func,
   disabled: PropTypes.bool.isRequired,
+};
+
+Tile.defaultProps = {
+  onSelect: () => {},
 };
 
 export default Tile;
